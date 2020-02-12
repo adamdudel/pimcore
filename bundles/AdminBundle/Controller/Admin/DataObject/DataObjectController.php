@@ -242,7 +242,7 @@ class DataObjectController extends ElementControllerBase implements EventedContr
             $allowedTypes[] = DataObject\AbstractObject::OBJECT_TYPE_VARIANT;
         }
 
-        $hasChildren = $child->hasChildren($allowedTypes);
+        $hasChildren = $child->hasChildren($allowedTypes, true);
 
         $tmpObject['isTarget'] = false;
         $tmpObject['allowDrop'] = false;
